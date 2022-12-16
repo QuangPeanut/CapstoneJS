@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopping</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- font gg -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- boostrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div id="app">
+    <div class="container">
+      <div class="icon" id="cart">
+        <i class="fa-solid fa-cart-shopping" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade bg-modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content bg-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Cart</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                <i class="fa-solid fa-x"></i>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="cart-items">
+              </div>
+            </div>
+            <div class="tinhTong"> <span> Total: $0 </span>
+            </div>
+            <div class="modal-footer">
+              <button onclick="buy(1)" class="btn buy">Purchase <i class="fas fa-credit-card"
+                  style="color:#6665dd;"></i></button>
+              <button onclick="clearCart()" class="btn clear">Clear Cart <i class="fas fa-trash"
+                  style="color:#bb342f;"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <select id="filter">
+        <option value="all">All</option>
+        <option value="Samsung">SamSung</option>
+        <option value="iphone">Iphone</option>
+      </select>
+
+      <div class="box"></div>
+    </div>
+  </div>
+
+
+  <!-- Axios -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"
+    integrity="sha512-0qU9M9jfqPw6FKkPafM3gy2CBAvUWnYVOfNPDYKVuRTel1PrciTj+a9P3loJB+j0QmN2Y0JYQmkBBS8W+mbezg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- boostrap 5 js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="./Services/product.js"></script>
+  <script src="./models/main.js"></script>
+</body>
+
+</html>
