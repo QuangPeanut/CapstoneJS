@@ -3,10 +3,12 @@
     padding: 0;
     margin: 0;
 }
-p{
+
+p {
     margin: 0 !important;
 }
-body{
+
+body {
     font-size: 16px;
     color: white;
     font-family: "Montserrat", sans-serif;
@@ -84,12 +86,13 @@ img {
     font-size: 20px;
 }
 
-#filter{
+#filter {
     border-radius: 10px;
     padding: 9px;
     text-align: center;
     background-color: white;
 }
+
 .item {
     position: relative;
     width: 17%;
@@ -99,21 +102,25 @@ img {
     overflow-y: hidden;
     transition: all 0.5s;
 }
+
 .item:hover {
     height: 450px;
     width: 260px;
     box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
 }
+
 .item:hover .content-container {
     bottom: 20px;
 }
-.title-name{
+
+.title-name {
     padding: 20px 10px;
     display: block;
     color: #ffffff;
     text-align: center;
 
 }
+
 .content-container {
     position: absolute;
     height: auto;
@@ -126,24 +133,28 @@ img {
     transition: all 0.5s;
 }
 
-.name-product{
+.name-product {
     font-size: 16px;
 
 }
+
 .name-product,
-.purchase{
+.purchase {
     display: flex;
     justify-content: space-between;
     border-radius: 18px;
 }
+
 .dec {
     margin-top: 20px;
     font-size: 13px;
 }
-.purchase{
+
+.purchase {
     margin-top: 10px;
     align-items: center;
 }
+
 .purchase .add-btn {
     border-radius: 20px;
     border: 1px solid white;
@@ -153,22 +164,27 @@ img {
 }
 
 /* modalcart */
-.bg-content{
+.bg-content {
     background-color: #010101;
 }
-.bg-modal{
+
+.bg-modal {
     background: rgba(0, 0, 0, 0.75);
 }
-.modal-title{
+
+.modal-title {
     color: white;
 }
-.btn-close{
+
+.btn-close {
     color: #ffffff;
     background: none;
 }
-.btn-close:hover{
+
+.btn-close:hover {
     color: red;
 }
+
 /* cart-items */
 button {
     border: none;
@@ -178,11 +194,13 @@ button {
     cursor: pointer;
     /* transition:all 3s; */
 }
-.cart-items{
+
+.cart-items {
     display: flex;
     flex-direction: column;
 }
-.cart-item{
+
+.cart-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -192,9 +210,11 @@ button {
     justify-content: space-around;
     border-bottom: 1px solid whitesmoke;
 }
-.cart-item p{
+
+.cart-item p {
     margin: 0;
 }
+
 .cart-img {
     width: 90px;
     height: 60px;
@@ -206,12 +226,14 @@ button {
     padding: 2px 8px;
     margin: 0 3px;
 }
-.btn-qty i{
+
+.btn-qty i {
     font-weight: 900;
     font-size: 12px;
 }
+
 .qty-change div,
-.btn-add div{
+.btn-add div {
     display: flex;
     align-items: center;
 }
@@ -227,12 +249,12 @@ button {
     transition: all 1s;
 }
 
-.btn:hover{
+.btn:hover {
     color: black;
     box-shadow: inset 20em 0 0 0 white;
 }
 
-.tinhTong{
+.tinhTong {
     display: block;
     text-align: right;
 }
